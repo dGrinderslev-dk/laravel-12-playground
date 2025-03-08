@@ -12,10 +12,6 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-Route::get('/test2', function () {
-    return view('test2');
-})->name('test2');
-
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
