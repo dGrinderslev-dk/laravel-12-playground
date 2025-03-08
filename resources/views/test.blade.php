@@ -58,45 +58,45 @@
 					{{-- Top navbar --}}
 					<div id="top-navbar" class="sticky top-0 z-10 bg-amber-300">
 							<p>2</p>
-							<button x-on:click="sidebarIsOpen = !sidebarIsOpen" class="ms-100">Toggle</button>
+							<button x-on:click="sidebarIsOpen = !sidebarIsOpen" class="ms-50">Toggle</button>
 					</div>
 
 					{{-- Main content --}}
 					<div id="main-content" class="grow bg-green-400">
-						<div class="ms-100">
-							<p>Her er indhold aller første</p>
-							<p>Her er indhold næst øverst</p>
-							<p>Her er indhold tredje øverst</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold</p>
-							<p>Her er indhold 3. sidste</p>
-							<p>Her er indhold 2. sidste</p>
-							<p>Her er indhold aller sidste</p>
+						<div class="ms-50">
+							<p>Her er indholdHer er indhold aller første</p>
+							<p>Her er indholdHer er indhold næst øverst</p>
+							<p>Her er indholdHer er indhold tredje øverst</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold</p>
+							<p>Her er indholdHer er indhold 3. sidste</p>
+							<p>Her er indholdHer er indhold 2. sidste</p>
+							<p>Her er indholdHer er indhold aller sidste</p>
 						</div>
 					</div>
 			</div>
