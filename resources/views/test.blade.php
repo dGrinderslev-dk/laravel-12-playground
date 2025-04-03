@@ -17,7 +17,7 @@
     {{-- Hovedcontainer for hele layoutet --}}
     <div id="layout-container" x-data="{ sidebarIsOpen: false }" class="flex flex-row bg-red-500">
 			{{-- Side navbar --}}
-			<nav id="side-navbar" x-bind:class="sidebarIsOpen ? 'translate-x-0' : '-translate-x-64'" class="h-dvh fixed md:static z-30 left-0 top-0 w-64 bg-fuchsia-600 transition-transformfff duration-300 md:translate-x-0 flex flex-col">
+			<nav id="side-navbar" x-bind:class="sidebarIsOpen ? 'translate-x-0' : '-translate-x-64'" class="h-dvh fixed md:static z-30 left-0 top-0 w-64 bg-fuchsia-600 transition-[transform,height] duration-300 md:translate-x-0 flex flex-col">
 					<div id="lidtGuf" class="">
 							<p>Hej1</p>
 							<p>Hej2</p>
@@ -59,40 +59,6 @@
 							<p>Her er indholdHer er indhold næst øverst</p>
 							<p>Her er indholdHer er indhold tredje øverst</p>
 							<p>Her er indholdHer er indhold</p>
-
-							<button onclick="toggleHeight()" class="mt-4 p-2 bg-blue-500 text-white rounded">Toggle Height & Rotate</button>
-							<div id="testDiv" class="transition-transform transition-[height] bg-red-500 mt-4 w-full h-[10dvh]"></div>
-							
-							<button onclick="toggleHeight2()" class="mt-4 p-2 bg-blue-500 text-white rounded">Toggle Height & Rotate2</button>
-							<div id="testDiv2" class="transition-[transform,height] bg-red-500 mt-4 w-full h-[10dvh]"></div>
-							
-							<script>
-								function toggleHeight() {
-									const div = document.getElementById('testDiv');
-									const isExpanded = div.classList.contains('h-[20dvh]');
-									div.classList.toggle('h-[20dvh]');
-									div.classList.toggle('h-[10dvh]');
-
-									// Tilføj forsinkelse på rotationen
-									setTimeout(() => {
-											div.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
-									}, 500); // Forsinkelse på 500ms, svarende til din transition duration
-								}
-								function toggleHeight2() {
-									const div2 = document.getElementById('testDiv2');
-									const isExpanded = div2.classList.contains('h-[20dvh]');
-									div2.classList.toggle('h-[20dvh]');
-									div2.classList.toggle('h-[10dvh]');
-
-									// Tilføj forsinkelse på rotationen
-									setTimeout(() => {
-											div2.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
-									}, 500); // Forsinkelse på 500ms, svarende til din transition duration
-								}
-							</script>
-							
-
-
 							<p>Her er indholdHer er indhold</p>
 							<p>Her er indholdHer er indhold 3. sidste</p>
 							<p>Her er indholdHer er indhold 2. sidste</p>
