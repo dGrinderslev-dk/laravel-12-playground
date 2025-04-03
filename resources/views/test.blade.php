@@ -17,7 +17,7 @@
     {{-- Hovedcontainer for hele layoutet --}}
     <div id="layout-container" x-data="{ sidebarIsOpen: false }" class="flex flex-row bg-red-500">
 			{{-- Side navbar --}}
-			<nav id="side-navbar" x-bind:class="sidebarIsOpen ? 'translate-x-0' : '-translate-x-64'" class="h-dvh fixed md:static z-30 left-0 top-0 w-64 bg-fuchsia-600 transition-[transform_300ms,height_300ms] md:translate-x-0 flex flex-col">
+			<nav id="side-navbar" x-bind:class="sidebarIsOpen ? 'translate-x-0' : '-translate-x-64'" class="h-dvh fixed md:static z-30 left-0 top-0 w-64 bg-fuchsia-600 transition-[transform_300ms,height_1000ms_ease-in] md:translate-x-0 flex flex-col">
 					<div id="lidtGuf" class="">
 							<p>Hej1</p>
 							<p>Hej2</p>
@@ -45,7 +45,7 @@
 			</nav>
 			
 			{{-- "Top navbar + Main content"-wrapper --}}
-			<div id="topnavbar-and-maincontent-wrapper" class="h-dvh transition-[height_300ms] flex flex-col grow overflow-y-auto bg-amber-700">
+			<div id="topnavbar-and-maincontent-wrapper" class="h-dvh transition-[height_1000ms_ease-in] flex flex-col grow overflow-y-auto bg-amber-700">
 					{{-- Top navbar --}}
 					<div id="top-navbar" class="sticky top-0 z-10 bg-amber-300">
 							<p>2</p>
