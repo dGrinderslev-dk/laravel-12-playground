@@ -59,6 +59,22 @@
 							<p>Her er indholdHer er indhold næst øverst</p>
 							<p>Her er indholdHer er indhold tredje øverst</p>
 							<p>Her er indholdHer er indhold</p>
+
+							<button onclick="toggleHeight()" class="mt-4 p-2 bg-blue-500 text-white rounded">Toggle Height & Rotate</button>
+							<div id="testDiv" class="transition-transform transition-[height] bg-red-500 mt-4 w-full h-[10dvh]"></div>
+							
+							<script>
+								function toggleHeight() {
+									const div = document.getElementById('testDiv');
+									const isExpanded = div.classList.contains('h-[20dvh]');
+									div.classList.toggle('h-[20dvh]');
+									div.classList.toggle('h-[10dvh]');
+									div.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+								}
+							</script>
+							
+
+
 							<p>Her er indholdHer er indhold</p>
 							<p>Her er indholdHer er indhold 3. sidste</p>
 							<p>Her er indholdHer er indhold 2. sidste</p>
