@@ -72,14 +72,22 @@
 									const isExpanded = div.classList.contains('h-[20dvh]');
 									div.classList.toggle('h-[20dvh]');
 									div.classList.toggle('h-[10dvh]');
-									div.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+
+									// Tilføj forsinkelse på rotationen
+									setTimeout(() => {
+											div.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+									}, 500); // Forsinkelse på 500ms, svarende til din transition duration
 								}
 								function toggleHeight2() {
 									const div2 = document.getElementById('testDiv2');
 									const isExpanded = div2.classList.contains('h-[20dvh]');
 									div2.classList.toggle('h-[20dvh]');
 									div2.classList.toggle('h-[10dvh]');
-									div2.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+
+									// Tilføj forsinkelse på rotationen
+									setTimeout(() => {
+											div2.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+									}, 500); // Forsinkelse på 500ms, svarende til din transition duration
 								}
 							</script>
 							
