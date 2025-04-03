@@ -45,7 +45,7 @@
 			</nav>
 			
 			{{-- "Top navbar + Main content"-wrapper --}}
-			<div id="topnavbar-and-maincontent-wrapper" class="h-dvh flex flex-col grow overflow-y-auto bg-amber-700">
+			<div id="topnavbar-and-maincontent-wrapper" class="h-dvh transition-[height] flex flex-col grow overflow-y-auto bg-amber-700">
 					{{-- Top navbar --}}
 					<div id="top-navbar" class="sticky top-0 z-10 bg-amber-300">
 							<p>2</p>
