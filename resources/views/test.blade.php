@@ -63,6 +63,9 @@
 							<button onclick="toggleHeight()" class="mt-4 p-2 bg-blue-500 text-white rounded">Toggle Height & Rotate</button>
 							<div id="testDiv" class="transition-transform transition-[height] bg-red-500 mt-4 w-full h-[10dvh]"></div>
 							
+							<button onclick="toggleHeight2()" class="mt-4 p-2 bg-blue-500 text-white rounded">Toggle Height & Rotate2</button>
+							<div id="testDiv2" class="transition-[transform,height] bg-red-500 mt-4 w-full h-[10dvh]"></div>
+							
 							<script>
 								function toggleHeight() {
 									const div = document.getElementById('testDiv');
@@ -70,6 +73,13 @@
 									div.classList.toggle('h-[20dvh]');
 									div.classList.toggle('h-[10dvh]');
 									div.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+								}
+								function toggleHeight2() {
+									const div2 = document.getElementById('testDiv2');
+									const isExpanded = div2.classList.contains('h-[20dvh]');
+									div2.classList.toggle('h-[20dvh]');
+									div2.classList.toggle('h-[10dvh]');
+									div2.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
 								}
 							</script>
 							
